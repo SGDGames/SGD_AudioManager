@@ -46,6 +46,11 @@ namespace SGP_Util
                 };
 
             }
+            else
+            {
+                _audioPool[key] =
+                    new AudioData(key, _tempObject, clip, volume, mute, loop, multiChannel);
+            }
         }
 
         public bool Dispose(string key)
@@ -192,6 +197,7 @@ namespace SGP_Util
             if (_multiIndex >= MultiChannel) _multiIndex = 0;
         }
 
+        /*
         public void EndEvent()
         {
             if (Loop)
@@ -199,6 +205,7 @@ namespace SGP_Util
             else
                 Stop();
         }
+        */
 
 
         public void Stop()
