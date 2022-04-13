@@ -1,4 +1,4 @@
-# SGP_AudioManager
+# SGD_AudioManager
 Unity3D / 2021.1.11f1 / Windows10
 
  AudioManager
